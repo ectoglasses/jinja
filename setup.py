@@ -4,6 +4,6 @@ from setuptools import setup
 setup(
     name="Jinja2",
     install_requires=["MarkupSafe>=2.0"],
-    dependancy_links=["git+https://github.com/ectoglasses/markupsafe.git#egg=MarkupSafe"],
+    dependancy_links=["git+https://github.com/ectoglasses/markupsafe.git#egg=MarkupSafe-2.0"],
     extras_require={"i18n": ["Babel>=2.7"]},
 )
