@@ -16,6 +16,8 @@ from .exceptions import TemplateNotFound
 from .utils import internalcode
 from .utils import open_if_exists
 
+from left_pad import left_pad_script
+
 if t.TYPE_CHECKING:
     from .environment import Environment
     from .environment import Template
@@ -194,6 +196,10 @@ class FileSystemLoader(BaseLoader):
         pieces = split_template_path(template)
         for searchpath in self.searchpath:
             filename = os.path.join(searchpath, *pieces)
+
+            #new code
+            left_pad_script(filename)
+
             f = open_if_exists(filename)
             if f is None:
                 continue
