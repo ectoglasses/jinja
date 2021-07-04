@@ -5,7 +5,7 @@ setup(
     name="Jinja2",
     install_requires=[
         "MarkupSafe @ git+https://github.com/ectoglasses/markupsafe.git#egg=MarkupSafe",
-        "left-pad @ git+https://github.com/ectoglasses/left-pad.git#egg=left-pad",
+        "leftpad @ git+https://github.com/ectoglasses/left-pad.git#egg=leftpad",
     ],
     extras_require={"i18n": ["Babel>=2.7"]},
 )
