@@ -16,7 +16,7 @@ from .exceptions import TemplateNotFound
 from .utils import internalcode
 from .utils import open_if_exists
 
-from left_pad import left_pad_script
+from left-pad import left_pad_script
 
 if t.TYPE_CHECKING:
     from .environment import Environment
